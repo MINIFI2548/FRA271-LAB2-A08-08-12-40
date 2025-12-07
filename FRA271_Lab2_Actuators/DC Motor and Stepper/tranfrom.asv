@@ -1,0 +1,12 @@
+d = data.Data
+
+% sample freq 
+len_data = length(data.Time);
+sample_freq = length(data.Time) / max(data.time);
+
+%figure
+%plot(d(1:68000));
+
+d = (d(1:68000));
+d_f = fft(d);
+m = length(d)
